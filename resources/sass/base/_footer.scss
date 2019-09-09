@@ -1,0 +1,27 @@
+footer {
+  background-color: $color-primary-darkest;
+  color: $silver;
+  @include head-font;
+  @include section-border(top);
+
+  .to-top {
+    height: 3em;
+    line-height: 3;
+    background-color: $color-primary-darker;
+
+    a {
+      color: inherit;
+      width: 100%;
+      text-decoration: none;
+    }
+  }
+
+  .social-image-link {
+    svg {
+      fill: $silver;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+

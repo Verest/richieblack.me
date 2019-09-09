@@ -1,0 +1,23 @@
+//breakpoint mixin
+@mixin mq($breakpoint){
+  $breakValue: map-get($breakpoints, $breakpoint);
+  @media only screen and (min-width: $breakValue){
+    @content;
+  }
+}
+
+@mixin head-font {
+  font-family: "Oxygen Mono", Monaco, "Lucida Console", monospace;
+}
+
+@mixin main-font {
+  font-family: Oxygen, Tahoma, Arial, sans-serif;
+}
+
+@mixin section-border($side, $color: $color-tertiary, $type: solid){
+  border-#{$side}: 2px $color $type;
+}
+
+@mixin border-rad($rad: 5%){
+  border-radius: $rad;
+}

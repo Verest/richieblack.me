@@ -1,0 +1,122 @@
+header {
+  background-color: $color-primary-darkest;
+  @include head-font;
+  @include section-border(bottom);
+
+  .logo-container {
+    position: relative;
+    text-decoration: none;
+
+    .title {
+      padding-left: 2em;
+      font-size: .75em;
+      color: $silver;
+    }
+
+    #logo {
+      height: 1.5em;
+      width: 1.5em;
+      position: absolute;
+      left: .4em;
+      top: 1.5em;
+
+      @include mq(s) {
+        height: 2em;
+        width: 2em;
+        top: 2em;
+      }
+    }
+
+    @include mq(s) {
+      .title {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .link-container {
+    margin: 0 0 1.5em 0;
+    padding-top: 3px;
+    display: none;
+
+    li {
+     padding-bottom: 8px;
+
+      a {
+        display: block;
+      }
+    }
+
+    @include mq(s) {
+      margin-top: 1.5em;
+      display: flex !important;
+
+      li {
+        padding-bottom: 0;
+
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+
+
+  #hamburger{
+    display: block;
+    position: absolute;
+    top: 1.25em;
+    right: 16px;
+    height: 2em;
+    width: 2em;
+    float: right;
+    border: none;
+    @include border-rad;
+    @include mq(s){
+      display: none;
+    }
+
+    %bar{
+      width: 1.6em;
+      height: 0.2em;
+      background-color: $color-primary-darker;
+      position: absolute;
+      left: 0.2em;
+      transform-origin: 0 50%;
+      transition: transform 0.25s ease-out,
+      width 0.25s ease-out,
+      top 0.25s ease-out,
+      opacity 0.25s ease-out;
+    }
+
+    .bar{ //doesn't actually exist
+      &-top{
+        @extend %bar;
+        top: 0.4em;
+      }
+      &-mid{
+        @extend %bar;
+        top: 0.9em;
+      }
+      &-bot{
+        @extend %bar;
+        top: 1.4em;
+      }
+    }
+
+    .transition-bar-top{
+      width: 2.26em;
+      top: 0.1em;
+      transform: rotate(45deg);
+    }
+    .transition-bar-mid{
+      opacity: 0;
+    }
+    .transition-bar-bot{
+      width: 2.26em;
+      top: 1.7em;
+      transform: rotate(-45deg);
+    }
+  }
+}

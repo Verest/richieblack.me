@@ -1,0 +1,17 @@
+.btn {
+  padding: 0.5em 0.5em;
+  display: inline-block;
+
+  &-light {
+    border: 1px $silver solid;
+    color: $silver;
+  }
+
+  &-dark {
+
+  }
+}
+
+a.btn {
+  text-decoration: none;
+}
