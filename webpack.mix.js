@@ -35,3 +35,4 @@ mix.webpackConfig({
 mix.js('resources/js/app.js', 'public/assets/js');
 
 mix.sass('resources/sass/app.scss', 'public/assets/css');
+mix.sass('resources/sass/projects/simon.scss', 'public/assets/css');

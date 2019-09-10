@@ -12,3 +12,6 @@
 */
 
 Route::get('/', 'MainController@index')->name('home');
+
+Route::get('/projects', 'ProjectController@index')->name('projects');
+Route::get('/projects/{project}', 'ProjectController@showProject')->name('project');

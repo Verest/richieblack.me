@@ -24,7 +24,7 @@
                 <ul class="row un-styled">
                     <li class="col-s-5 center"><a class='btn btn-light' href='http://blog.richieblack.me'>Blog</a></li>
                     {{--            <li class='col-md-4'><a href='{{route('contact')}}'>Contact</a></li>--}}
-                    <li class='col-s-7 center'><a class='btn btn-light' href="{{route('home')}}#projects">Projects</a></li>
+                    <li class='col-s-7 center'><a class='btn btn-light' href="{{route('projects')}}">Projects</a></li>
                 </ul>
             </nav>
         </div>

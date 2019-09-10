@@ -1,0 +1,58 @@
+//General Card styles
+.card {
+  text-align: center;
+  padding: 1em;
+  width: 80%;
+  margin: 0 auto;
+
+  p {
+    margin-top: 0.2em;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+
+  @include mq(xs){
+    &:nth-of-type(n+2)::before{
+      content: '';
+      display: block;
+      position: relative;
+      width: 125%;
+      left: -12.5%;
+      border-bottom: 1px solid $gray-lighter;
+      margin-bottom: 1em;
+    }
+  }
+
+  @include mq(s){
+    width: 40%;
+    margin: 1em 5%;
+    float: left;
+
+    height: 320px;
+  }
+
+  @include mq(m){
+    width: 27.33%;
+    margin: 1em 3%;
+    height: 290px;
+  }
+
+  @include mq(l){
+    width: 21%;
+    margin: 1em 2%;
+    height: 295px;
+  }
+
+  @include mq(xl){
+    width: 16%;
+    margin: 1em 2%;
+    height: 280px;
+  }
+}
+
+//Image Styles
+.card__images{
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid $gray-dark;
+}
