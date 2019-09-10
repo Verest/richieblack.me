@@ -11,6 +11,10 @@ header {
       padding-left: 2em;
       font-size: .75em;
       color: $silver;
+
+      h1 {
+        font-weight: normal;
+      }
     }
 
     #logo {
