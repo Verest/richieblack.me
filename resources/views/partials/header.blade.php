@@ -1,7 +1,7 @@
 <header id="top">
     <div class="container">
         <div class="row">
-            <a class="col-s-7 logo-container" href="{{route('home')}}">
+            <a class="col-s-6 logo-container" href="{{route('home')}}">
                 <div class="title">
                     <h1><span class="hidden">R</span>ichie Black</h1>
                 </div>
@@ -20,11 +20,11 @@
                 </button>
             </a>
 
-            <nav class="col-s-5 link-container">
-                <ul class="row un-styled">
-                    <li class="col-s-5 center"><a class='btn btn-light' href='http://blog.richieblack.me'>Blog</a></li>
+            <nav class="col-s-6 link-container">
+                <ul class="un-styled">
+                    <li class="center"><a class='btn btn-light' href='http://blog.richieblack.me'>Blog</a></li>
                     {{--            <li class='col-md-4'><a href='{{route('contact')}}'>Contact</a></li>--}}
-                    <li class='col-s-7 center'><a class='btn btn-light' href="{{route('projects')}}">Projects</a></li>
+                    <li class='center'><a class='btn btn-light' href="{{route('projects')}}">Projects</a></li>
                 </ul>
             </nav>
         </div>
