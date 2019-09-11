@@ -1,0 +1,66 @@
+@import '../helpers/helpers';
+
+.mark-container{
+  width:90%;
+  margin: 0 auto;
+}
+
+.intro-paragraph{
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+
+  @include mq(s){
+    width: 80%;
+  }
+
+  @include mq(m){
+    max-width: 450px;
+  }
+}
+
+.lhs,
+.rhs{
+  width:90%;
+  display:block;
+  margin:0 auto 2em;
+  @include mq(s){
+    width: 80%;
+  }
+  @include mq(l){
+    width: 42%;
+    margin: 0 2.5% 2em;
+    max-width: 550px;
+  }
+}
+.rhs{
+  @include mq(l){
+    float: right;
+  }
+  @include mq(xl){
+    margin-right: 5%;
+  }
+}
+.lhs{
+  @include mq(l){
+    float: left;
+  }
+  @include mq(xl){
+    margin-left: 5%;
+  }
+}
+
+.input,
+.output{
+  display: block;
+  min-height: 14em;
+  width:100%;
+  height: 100%;
+  border: $gray solid 1px;
+  background-color: #eee;
+
+}
+
+.label{
+  text-align: center;
+}

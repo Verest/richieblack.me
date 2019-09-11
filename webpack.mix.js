@@ -36,3 +36,6 @@ mix.js('resources/js/app.js', 'public/assets/js');
 
 mix.sass('resources/sass/app.scss', 'public/assets/css');
 mix.sass('resources/sass/projects/simon.scss', 'public/assets/css');
+mix.sass('resources/sass/projects/markdown.scss', 'public/assets/css');
+
+mix.react('resources/js/components/markdown-preview.js', 'public/assets/js')
