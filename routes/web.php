@@ -13,5 +13,14 @@
 
 Route::get('/', 'MainController@index')->name('home');
 
-Route::get('/projects', 'ProjectController@index')->name('projects');
-Route::get('/projects/{project}', 'ProjectController@showProject')->name('project');
+Route::group(['prefix' => 'projects'], function() {
+    Route::get('/', 'ProjectController@index')->name('projects');
+    Route::get('/{project}', 'ProjectController@showProject')->name('project');
+});
+
+Route::group(['prefix' => 'blog'], function() {
+    Route::get('/', 'BlogController@index')->name('blog');
+    Route::get('/{postBySlug}', 'BlogController@showPost')->name('blogPost');
+});
+
+
