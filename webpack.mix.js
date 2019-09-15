@@ -33,6 +33,7 @@ mix.webpackConfig({
 
 
 mix.js('resources/js/app.js', 'public/assets/js');
+mix.js('resources/js/projects/tictactoe.js', 'public/assets/js');
 
 mix.sass('resources/sass/app.scss', 'public/assets/css');
 mix.sass('resources/sass/projects/simon.scss', 'public/assets/css');
@@ -42,4 +43,4 @@ mix.sass('resources/sass/projects/css-zen.scss', 'public/assets/css')
         processCssUrls: false
     });
 
-mix.react('resources/js/components/markdown-preview.js', 'public/assets/js')
+mix.react('resources/js/components/markdown-preview.js', 'public/assets/js');

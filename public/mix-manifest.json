@@ -4,5 +4,6 @@
     "/assets/css/simon.css": "/assets/css/simon.css",
     "/assets/css/markdown.css": "/assets/css/markdown.css",
     "/assets/css/css-zen.css": "/assets/css/css-zen.css",
-    "/assets/js/markdown-preview.js": "/assets/js/markdown-preview.js"
+    "/assets/js/markdown-preview.js": "/assets/js/markdown-preview.js",
+    "/assets/js/tictactoe.js": "/assets/js/tictactoe.js"
 }
