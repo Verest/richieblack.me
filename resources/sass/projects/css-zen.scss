@@ -1,0 +1,481 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your.. images should be linked as if the CSS file sits in the same folder as the.. images. ie. no paths. */
+
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700');
+
+/**************
+Base Styles and Spacing
+**************/
+*{
+	box-sizing: border-box;
+}
+
+/*background fixes*/
+header,
+footer,
+aside,
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements{
+	padding-left:5%;
+	padding-right:5%;
+}
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+aside{
+	padding-top: 1.625em;
+}
+
+aside{
+	padding-bottom: 1.625em;
+}
+
+/*text indent on all but 1st paragraph*/
+.preamble p:nth-child(n+3),
+.explanation p:nth-child(n+3),
+.participation p:nth-child(n+3),
+.requirements p:nth-child(n+3){
+    text-indent: 1.5em;
+}
+/*base styles*/
+html {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 16px;
+}
+body {
+	margin: 0;
+	line-height: 1.625;
+	color:#282c28;
+}
+h1,
+h2,
+h3{
+	line-height: 1.2;
+	text-align: center;
+}
+
+h1{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.953em;
+}
+h2{
+	margin-bottom: 1.2em;
+	font-size: 1.25em;
+}
+h3{
+	margin-bottom: 1.6em;
+	font-size: 1.25em;
+	margin-top:0;
+}
+
+/*footer done in own section*/
+p,
+nav{
+		margin-bottom: 0;
+		padding-bottom: 1.625em;
+}
+
+/*links*/
+a{
+	text-decoration: none;
+}
+a:link {
+	color: #787BFD;
+}
+a:visited {
+	color:#393B78;
+}
+
+.summary a:visited,
+footer a:visited,
+aside a:visited{
+	color: #787BFD;
+}
+
+a:hover, a:focus, a:active,
+.summary a:hover, .summary a:focus, .summary a:active,
+footer a:hover, footer a:focus, footer a:active,
+aside a:hover, aside a:focus, aside a:active{
+	color: #52B031;
+	background-color:#393B78;
+}
+
+
+
+abbr {
+
+}
+
+
+/**************
+Header
+**************/
+.summary{
+	text-align: center;
+	margin-top: -1.5em;
+	padding-top: 1.5em;
+	/* padding-bottom: 1em; */
+	position: relative;
+}
+.summary::before{
+	content:"";
+	position:absolute;
+	z-index: -1;
+	top: -154.594px;
+	bottom: 0;
+	left:0;
+	right:0;
+	background-image:url("../images/css-zen/gray-bg.jpg");
+	background-size: cover;
+}
+.summary::after{
+	content:"";
+	position:absolute;
+	z-index: -1;
+	top: -154.594px;
+	bottom: 0;
+	left:0;
+	right:0;
+	background-color: rgba(40,44,40,0.7);
+}
+.summary a{
+
+}
+header{
+	padding-top: 1em;
+}
+.summary,
+header{
+	color: #CBDCC8;
+}
+
+
+/**************
+Main Content
+**************/
+
+.explanation,
+.requirements,
+.preamble,
+.participation,
+.benefits{
+	position: relative;
+}
+.preamble,
+.participation,
+.benefits{
+	background-color: rgba(200,220,200,0.85);
+}
+.preamble::after,
+.participation::before,
+.benefits::after{
+	content:"";
+	position: absolute;
+	z-index:-5;
+	top:0;	bottom:0;	left:0;	right:0;
+	background-image: url('../images/css-zen/green-bg.jpg');
+	background-size: cover;
+}
+.explanation::after,
+.requirements::after{
+	content:"";
+	position: absolute;
+	z-index:-15;
+	top:0;	bottom:0;	left:0;	right:0;
+	background-image: url("../images/css-zen/brown-bg.jpg");
+	background-size: cover;
+}
+.main{
+	position: relative;
+}
+.main::after{
+	content:"";
+	position: absolute;
+	z-index:-10;
+	top:0;	bottom:0;	left:0;	right:0;
+	background-color: rgba(255,235,205,.85);
+}
+
+/**************
+Footer
+**************/
+footer{
+	position: relative;
+	background-color: rgba(40,44,40,0.7);
+	padding: 0.625em 0;
+
+	clear: both;
+	overflow: auto;
+}
+footer a{
+	display: inline-block;
+	text-align: center;
+	padding: 1em 0;
+	float: left;
+	width: 20%;
+
+}
+footer::after{
+	content:"";
+	position:absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right:0;
+	background-image:url("../images/css-zen/gray-bg.jpg");
+	background-size: cover;
+}
+
+
+/**************
+Aside
+**************/
+aside{
+	/*#452313*/
+	background-image:url("../images/css-zen/gray-bg.jpg");
+	background-size:cover;
+	color: #CBDCC8;
+	position:relative;
+}
+aside::after{
+	content:"";
+	position:absolute;
+	top:0; bottom:0; right:0; left:0;
+	background-color: rgba(69,35,19,0.9);
+	z-index:1;
+}
+aside div{
+	position: relative;
+	z-index:2;
+}
+
+aside ul{
+	list-style:none;
+	text-align: center;
+	padding-left: 0;
+}
+.design-selection,
+.design-archives,
+.zen-resources{
+	border: 1px solid #CBDCC8;
+	border-radius: 2%;
+	padding-top: 1.625em;
+	margin-bottom: 1.625em;
+}
+.design-selection{
+	margin-top:1.625em;
+}
+
+/**************
+Misc.
+**************/
+
+
+/**************
+Media Queries
+**************/
+@media only screen and (min-width: 620px){
+	html{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 800px){
+	html{
+		font-size: 16px;
+	}
+	.explanation{
+		float: left;
+		width:45%;
+		margin-right:0;
+	}
+	.explanation::after{
+		background-image:none;
+	}
+	.participation{
+		width: 55%;
+		display: inline-block;
+		margin-left:0;
+	}
+	.participation::after{
+		content:"";
+		position: absolute;
+		z-index:-15;
+		top:0;	bottom:0;	left:-81.818%;	right:0%;
+		background-image: url('../images/css-zen/brown-bg.jpg');
+		background-size: cover;
+	}
+
+	.design-selection{
+		width:40%;
+		display:table-cell;
+		vertical-align: middle;
+	}
+
+	.design-archives,
+	.zen-resources{
+		width:80%;
+		float: right;
+		clear:right;
+	}
+	.wrapper{
+		content:"";
+		display:table;
+		clear:both;
+		width:100%;
+	}
+
+	p,
+	h3{
+		max-width: 600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	h1{
+		font-size: 2.441em;
+	}
+	h2{
+		font-size: 1.25em;
+	}
+	h3{
+		font-size: 1.25em;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.page-wrapper{
+		margin:0 auto;
+		max-width:1800px;
+		position: relative;
+	}
+	.intro{
+		height:288.59px;
+	}
+	.preamble{
+		width:63%;
+		float:left;
+	}
+	.explanation{
+		width: 63%;
+	}
+	.explanation::after{
+		background-image: url("../images/css-zen/brown-bg.jpg");
+	}
+	.participation::after{
+		background-image:none;
+
+	}
+	.participation {
+		width: 100%;
+	}
+	.participation p,
+	.participation h3{
+		width: 63%;
+		margin-right:auto;
+		margin-left: 5%;
+		margin-left:-webkit-calc(29.44444% - 300px);
+		margin-left:-moz-calc(29.44444% - 300px);
+		margin-left: calc(29.44444% - 300px);
+	}
+	aside{
+		float:right;
+		width: 37%;
+		position:absolute;
+		top:288px;
+		left:63%;
+		height:898px;
+		max-width: 666px;
+
+		box-shadow: -2px 2px 5px #282c28;
+	}
+	.design-selection,
+	.design-archives,
+	.zen-resources{
+		float:none;
+		display:block;
+		width:100%;
+	}
+	.benefits{
+		width: 37%;
+		position: absolute;
+		top:898px;
+		left:63%;
+		background-color:transparent;
+	}
+	.benefits::after{
+		background-image:none;
+	}
+
+	.requirements{
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+
+		-webkit-column-gap: 3.25em;
+		-moz-column-gap: 3.25em;
+		column-gap: 3.25em;
+
+		padding-bottom: 1.625em;
+	}
+	.requirements h3{
+		column-span: all;
+	}
+	.requirements p:nth-child(3){
+		page-break-after: always;
+		-webkit-column-break-after: always;
+		break-after: column;
+	}
+}
+
+@media only screen and (min-width: 1465px){
+	html{
+		font-size:20px;
+	}
+	.intro{
+		height:359.79px;
+	}
+	aside{
+		top:359px;
+		height:1179px;
+	}
+	.benefits{
+		width: 37%;
+		position: absolute;
+		top:1179px;
+		left:63%;
+		background-color:transparent;
+	}
+	.participation p,
+	.participation h3{
+		margin-left:-webkit-calc(29.44444% - 350px);
+		margin-left:-moz-calc(29.44444% - 350px);
+		margin-left: calc(29.44444% - 350px);
+	}
+
+	p,
+	h3{
+		max-width:700px;
+	}
+
+	.design-selection,
+	.design-archives{
+		margin-bottom: 3.25em;
+	}
+
+}

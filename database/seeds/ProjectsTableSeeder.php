@@ -26,6 +26,24 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2019-09-09 00:00:00',
                 'updated_at' => '2019-09-09 00:00:00',
             ),
+            1 => 
+            array (
+                'id' => 2,
+                'image_id' => 2,
+                'slug' => 'markdown-previewer',
+                'description' => 'A markdown previewer made in React',
+                'created_at' => '2019-09-10 00:00:00',
+                'updated_at' => '2019-09-10 00:00:00',
+            ),
+            2 => 
+            array (
+                'id' => 3,
+                'image_id' => 3,
+                'slug' => 'css-zen',
+                'description' => 'My CSS styling for <a href="http://www.csszengarden.com/">CSS Zen Garden</a>',
+                'created_at' => '2019-09-10 00:00:00',
+                'updated_at' => '2019-09-10 00:00:00',
+            ),
         ));
         
         
