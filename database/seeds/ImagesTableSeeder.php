@@ -41,6 +41,30 @@ class ImagesTableSeeder extends Seeder
                 'created_at' => '2019-09-10 00:00:00',
                 'updated_at' => '2019-09-10 00:00:00',
             ),
+            3 => 
+            array (
+                'id' => 4,
+                'src' => 'tictactoe.png',
+                'alt' => 'Tic Tac Toe Game',
+                'created_at' => '2019-09-11 00:00:00',
+                'updated_at' => '2019-09-11 00:00:00',
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'src' => 'wiki-view.png',
+                'alt' => 'Wikipedia Viewer',
+                'created_at' => '2019-09-15 00:00:00',
+                'updated_at' => '2019-09-15 00:00:00',
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'src' => 'state-calc.png',
+                'alt' => 'Calculator Made With React',
+                'created_at' => '2019-09-15 00:00:00',
+                'updated_at' => '2019-09-15 00:00:00',
+            ),
         ));
         
         
