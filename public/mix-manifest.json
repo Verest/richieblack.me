@@ -3,7 +3,10 @@
     "/assets/css/app.css": "/assets/css/app.css",
     "/assets/css/simon.css": "/assets/css/simon.css",
     "/assets/css/markdown.css": "/assets/css/markdown.css",
+    "/assets/css/wikipedia-viewer.css": "/assets/css/wikipedia-viewer.css",
     "/assets/css/css-zen.css": "/assets/css/css-zen.css",
+    "/assets/css/stateful-calculator.css": "/assets/css/stateful-calculator.css",
     "/assets/js/markdown-preview.js": "/assets/js/markdown-preview.js",
+    "/assets/js/stateful-calculator.js": "/assets/js/stateful-calculator.js",
     "/assets/js/tictactoe.js": "/assets/js/tictactoe.js"
 }

@@ -38,9 +38,15 @@ mix.js('resources/js/projects/tictactoe.js', 'public/assets/js');
 mix.sass('resources/sass/app.scss', 'public/assets/css');
 mix.sass('resources/sass/projects/simon.scss', 'public/assets/css');
 mix.sass('resources/sass/projects/markdown.scss', 'public/assets/css');
+mix.sass('resources/sass/projects/wikipedia-viewer.scss', 'public/assets/css');
 mix.sass('resources/sass/projects/css-zen.scss', 'public/assets/css')
+    .options({
+        processCssUrls: false
+    });
+mix.sass('resources/sass/projects/stateful-calculator.scss', 'public/assets/css')
     .options({
         processCssUrls: false
     });
 
 mix.react('resources/js/components/markdown-preview.js', 'public/assets/js');
+mix.react('resources/js/components/stateful-calculator.js', 'public/assets/js');

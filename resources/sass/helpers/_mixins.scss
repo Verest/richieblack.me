@@ -21,3 +21,11 @@
 @mixin border-rad($rad: 5%){
   border-radius: $rad;
 }
+
+@mixin clearfix{
+  &::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

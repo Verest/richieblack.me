@@ -17,6 +17,7 @@ $color-cta            : $brown;
 //variants of colors
 $color-primary-darker : darken($turquoise, 25%);
 $color-primary-darkest: darken($turquoise, 30%);
+$blue-darker          : darken($blue, 20%);
 
 //grays
 $gray-lightest        : lighten($gray, 80%);
