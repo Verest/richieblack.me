@@ -22,8 +22,14 @@
 
             <nav class="col-s-6 link-container">
                 <ul class="un-styled">
-                    <li class="center"><a class='btn btn-light' href='{{route('blog')}}'>Blog</a></li>
-                    <li class='center'><a class='btn btn-light' href="{{route('projects')}}">Projects</a></li>
+                    @yield('header-links')
+                    @auth()
+                        <li class="center">
+                            <a class='btn btn-light' href='{{ url('/logout') }}'>
+                                Logout
+                            </a>
+                        </li>
+                    @endauth
                 </ul>
             </nav>
         </div>

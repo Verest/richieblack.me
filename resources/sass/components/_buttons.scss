@@ -1,14 +1,36 @@
 .btn {
-  padding: 0.5em 0.5em;
+  padding: 0.5em 0.75em;
   display: inline-block;
+  box-shadow: 0 0 1px $gray-dark;
+  border: 1px $gray-dark solid;
 
   &-light {
-    border: 1px $silver solid;
+    border-color: $silver;
     color: $silver;
+    box-shadow: 0 0 1px $silver;
+
+    &:active {
+      background-color: $gray-lightest;
+    }
   }
 
-  &-dark {
+  $colors: (
+    "green": $color-primary-darker,
+    "brown": $brown,
+    "blue": $blue
+  );
 
+  @each $name, $color in $colors {
+    &-#{$name} {
+      color: $silver;
+      border-color: $color;
+      background-color: $color;
+      box-shadow: 0 0 1px $color;
+
+      &:active {
+        background-color: darken($color, 5%);
+      }
+    }
   }
 }
 

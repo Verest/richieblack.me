@@ -1,0 +1,18 @@
+.form-group {
+  margin-bottom: 1.5em;
+
+  .form-element,
+  .form-label {
+    padding: 0.5em 1em;
+  }
+
+  .form-element {
+    border: 1px solid $gray-lighter;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .form-label {
+
+  }
+}

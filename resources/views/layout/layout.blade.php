@@ -5,12 +5,12 @@
     <title>@yield('title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono">
-    {{--    todo change this css yield to inline or import...--}}
     <link rel="stylesheet" href="{{url("/assets/css/app.css")}}">
     @yield('css')
 </head>
 <body>
-@include('partials.header')
+
+@yield('header')
 
 <div class="container">
     <main>

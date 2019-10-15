@@ -34,7 +34,7 @@ footer {
 
 @for $i from 1 through 12 {
   .col-#{$i} {
-    flex-basis: 100%;
+    flex: 0 0 ($i/12 * 100%);
     padding: 0 8px;
   }
 

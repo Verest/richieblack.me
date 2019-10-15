@@ -1,4 +1,4 @@
-@extends('layout.layout')
+@extends('layout.main')
 
 @section('title')
   Tic Tac Toe Game

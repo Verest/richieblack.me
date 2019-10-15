@@ -1,0 +1,15 @@
+#admin-view-blog {
+  .new-button-container {
+    position: relative;
+
+    .btn {
+      margin-bottom: 1.5em;
+
+      @include mq(s) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

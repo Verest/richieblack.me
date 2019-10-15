@@ -1,4 +1,4 @@
-@extends('layout.layout')
+@extends('layout.main')
 
 @section('title')
     Error - Page Does not exist.

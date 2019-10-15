@@ -23,4 +23,15 @@ Route::group(['prefix' => 'blog'], function() {
     Route::get('/{postBySlug}', 'BlogController@showPost')->name('blogPost');
 });
 
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function() {
+    Route::get('/', 'AdminController@index')->name('admin');
+    Route::resource('/posts', 'PostsController');
+});
+
+Route::group(['namespace' => 'Auth'], function() {
+    Route::get('/login', 'LoginController@showLoginForm')->name('login');
+    Route::post('/login', 'LoginController@login');
+    Route::get('/logout', 'LoginController@logout');
+});
+
 
