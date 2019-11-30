@@ -7,5 +7,5 @@
 @section('content')
     <h1>{{$post->title}}</h1>
 
-    {!! Markdown::defaultTransform($post->body) !!}
+    {!! $post->body !!}
 @endsection
