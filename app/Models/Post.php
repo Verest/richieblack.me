@@ -16,7 +16,10 @@ class Post extends Model
     {
         $parser = new Markdown;
         $parser->code_span_content_func = function ($code) {
-            return "<code>$code</code>";
+            $code = str_replace("\n", '<br>', $code);
+            $code = str_replace('\t', '&nbsp;&nbsp;', $code);
+            $code = preg_replace("#^<br>|<br>$#", '', $code);
+            return $code;
         };
 
 

@@ -51,7 +51,7 @@
                         <label class="form-label" for="body">Body</label>
                     </div>
                     <div class="col-m-7">
-                        <textarea class="form-element" name="body" id="body" cols="30" rows="10">{{old('body') ?: $isEdit ? $post->body : ''}}
+                        <textarea class="form-element" name="body" id="body" cols="30" rows="10">{{old('body') ?: $isEdit ? $post->getOriginal('body') : ''}}
                         </textarea>
                     </div>
                 </div>
